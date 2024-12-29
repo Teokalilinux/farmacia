@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+
+    <title>Mi Pág ina Web Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+
+</head>
+
+<body>
+    <header>
+        <div id="Lineafrontal">
+        <h1>Farmacia Vazquez</h1>
+        </div>
+        <div id = "Lineaabajo">
+          
+      <p>Iniciar sesion</p>
+      <p>Registrarse</p>
+
+
+    </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Promos</h2>
+            <h2>No te pierdas estas promos increibles</h2>
+        </section>
+
+        <section>
+            <h3>Nuestro Catalogo</h3>
+            <h2>Aqui encontraras nuestros productos</h2>
+            <img src='images/RobloxScreenShot20240913_003141543.png' alt='FOTO DE NADA'>
+            <img src='images/ibu.jpg' alt="foto2"> 
+        </section>  
+        <section>
+            <h2>tu carrito</h2>
+            <button type = "button" > Comprar</button>
+        </section>
+        <div id = "windowflotante">
+          <h2>Inicio</h2>  
+          <h2>Mi carrito</h2> 
+          <h2>Ubicacion</h2> 
+          <h2>Ayuda</h2> 
+          <h2>Cerrar sesion</h2> 
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+
+
+
+
+
+
+</html>
